@@ -1,0 +1,14 @@
+{
+  "React Arrow Function Component": {
+    "prefix": "rafce",
+    "body": [
+      "const ${1:${TM_FILENAME_BASE/(^|-)([a-z])/${2:/upcase}/g}} = () => {",
+      "  return (",
+      "    <div>${1:${TM_FILENAME_BASE/(^|-)([a-z])/${2:/upcase}/g}}</div>",
+      "  )",
+      "}",
+      "export default ${1:${TM_FILENAME_BASE/(^|-)([a-z])/${2:/upcase}/g}}"
+    ],
+    "description": "React Arrow Function Component"
+  }
+}
