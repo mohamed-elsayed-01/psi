@@ -16,7 +16,7 @@ const IslandView = () => {
                 </p>
 
             </div>
-            <div className="mt-[40px] ml-[20px] lg:ml-[80px] ">
+            <div className="mt-[40px] ">
                 <IslandSlider />
             </div>
         </div>

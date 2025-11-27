@@ -14,7 +14,7 @@ const hero = () => {
         }} className="w-full relative">
             <div className="absolute inset-0 bg-black/25" />
             <div className="w-full min-h-screen grid grid-cols-1 lg:grid-cols-2 relative z-2">
-                <div className="h-full col-span-1 bg-transparent lg:bg-[#0B3F63]/60 flex flex-col  justify-center pt-32 lg:pt-0">
+                <div className="h-full col-span-1 bg-transparent lg:bg-[#0B3F63]/60 flex flex-col  justify-center pt-[80px] lg:pt-0">
                     <LeftSide />
                 </div>
                 <div className="h-full col-span-1 flex items-center justify-center py-10 lg:py-0">

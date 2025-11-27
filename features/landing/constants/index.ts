@@ -21,6 +21,9 @@ import img4 from "@/public/images/ideal-home/4.png"
 import slider1 from "@/public/images/slider/slide1.png"
 import slider2 from "@/public/images/slider/slide2.png"
 import slider3 from "@/public/images/slider/slide3.png"
+import slider4 from "@/public/images/slider/slide4.jpg"
+import slider5 from "@/public/images/slider/slide5.jpg"
+import slider6 from "@/public/images/slider/slide6.jpg"
 
 import island1 from "@/public/images/island/img1.png"
 import island2 from "@/public/images/island/img2.png"
@@ -97,17 +100,17 @@ const slides = [
     },
     {
         id: 4,
-        image: slider1,
+        image: slider4,
         alt: "Luxury interior dining room",
     },
     {
         id: 5,
-        image: slider2,
+        image: slider5,
         alt: "Mediterranean villa with pool",
     },
     {
         id: 6,
-        image: slider3,
+        image: slider6,
         alt: "Modern hillside house",
     }
 ]

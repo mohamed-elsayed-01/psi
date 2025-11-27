@@ -19,7 +19,6 @@ const Slider = () => {
                 const containerRect = container.getBoundingClientRect();
 
                 const scrollLeft = container.scrollLeft + (activeRect.left - containerRect.left) - (container.clientWidth / 2) + (activeRect.width / 2);
-
                 container.scrollTo({
                     left: scrollLeft,
                     behavior: 'smooth'
@@ -51,7 +50,7 @@ const Slider = () => {
                                 key={s.id}
                                 data-id={s.id}
                                 onClick={() => setActiveSlide(s)}
-                                className={clsx("rounded-[8px] overflow-hidden relative shrink-0 min-w-full md:min-w-[calc((100%-16px)/2)] lg:min-w-[calc((100%-64px)/3)] transition-all duration-300 cursor-pointer", isActive ? "h-[350px] lg:h-[479px]" : "h-[250px] lg:h-[340px]")}
+                                className={clsx("rounded-[8px] overflow-hidden relative shrink-0 min-w-full md:min-w-[calc((100%-16px)/2)] lg:min-w-[calc((100%-64px)/3)] transition-all duration-300", isActive ? "h-[350px] lg:h-[479px]" : "h-[250px] lg:h-[340px]")}
                             >
                                 <Image src={s.image.src} alt={s.alt} fill className="object-cover" />
                             </div>

@@ -8,7 +8,7 @@ import Image from "next/image"
 
 const LifeStyle = () => {
     return (
-        <div className="min-h-[1000px] w-full px-[20px] lg:px-[40px] relative flex justify-center items-center bg-[#FFFFFF]">
+        <div className="xl:min-h-[1000px] w-full px-[20px] lg:px-[40px] py-[80px] xl:py-0 relative flex justify-center items-center bg-[#FFFFFF]">
             <div className="relative z-5">
                 <div className="max-w-[640px] space-y-[48px] flex flex-col items-center">
                     <h3 className="text-[#272963] text-[40px] lg:text-[72px] font-normal tracking-[-2.88px] capitalize font-dm-serif text-center">

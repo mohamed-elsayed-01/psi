@@ -38,11 +38,11 @@ const RightSide = () => {
 
     return (
         <div className="w-full h-full flex justify-center items-center px-[20px] lg:px-[40px]">
-            <div className="w-full lg:max-w-[475px] px-6 py-8 bg-black/20 lg:bg-white/10 backdrop-blur-xs space-y-6">
+            <div className="w-full lg:max-w-[475px] px-6 py-8 bg-black/20 lg:bg-white/10 backdrop-blur-xs space-y-6 rounded-md">
                 <h2 className="font-dm-serif text-white text-[32px] font-normal tracking-[-1.28px] capitalize">
                     Register for Priority Access
                 </h2>
-                <form noValidate onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 gap-y-5 gap-x-6">
+                <form noValidate onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-2 gap-y-5 gap-x-6 ">
                     <div className="space-y-2 col-span-2">
                         <Label htmlFor="full-name" className="text-[#EEE9E6] font-poppins text-sm font-medium leading-5">
                             Full Name <span className="text-[#D92D20]">*</span>
@@ -53,13 +53,13 @@ const RightSide = () => {
                         </div>
                         {errors.fullName && <span className="text-white/70 text-xs">{errors.fullName.message}</span>}
                     </div>
-                    <div className="space-y-2 col-span-1">
+                    <div className="space-y-2 col-span-2 lg:col-span-1">
                         <Label htmlFor="phone-number" className="text-[#EEE9E6] font-poppins text-sm font-medium leading-5">
                             Phone Number <span className="text-[#D92D20]">*</span>
                         </Label>
                         <div className="flex items-center gap-2 text-white rounded-[4px] bg-[#EEE9E6]/6 px-4 py-3 backdrop-blur-[20px] h-full max-h-[48px]">
                             <Select defaultValue="UAE">
-                                <SelectTrigger className="border-none py-0! px-0! gap-0! h-auto! [&_svg]:text-white! [&_svg]:ml-3 w-full shadow-none">
+                                <SelectTrigger className="border-none py-0! px-0! gap-0! h-auto! [&_svg]:text-white! [&_svg]:ml-3 w-full shadow-none max-w-[90px]">
                                     <SelectValue className="border-none outline-none" />
                                 </SelectTrigger>
                                 <SelectContent className="ml-5">
@@ -75,7 +75,7 @@ const RightSide = () => {
                         </div>
                         {errors.phoneNumber && <span className="text-white/70 text-xs">{errors.phoneNumber.message}</span>}
                     </div>
-                    <div className="space-y-2 col-span-1">
+                    <div className="space-y-2 col-span-2 lg:col-span-1">
                         <Label htmlFor="email" className="text-[#EEE9E6] font-poppins text-sm font-medium leading-5">
                             Email <span className="text-[#D92D20]">*</span>
                         </Label>
@@ -85,7 +85,7 @@ const RightSide = () => {
                         </div>
                         {errors.email && <span className="text-white/70 text-xs">{errors.email.message}</span>}
                     </div>
-                    <div className="space-y-2 col-span-1">
+                    <div className="space-y-2 col-span-2 lg:col-span-1">
                         <Label htmlFor="preferred-unit" className="text-[#EEE9E6] font-poppins text-sm font-medium leading-5">
                             Preferred Unit <span className="text-[#D92D20]">*</span>
                         </Label>
@@ -109,7 +109,7 @@ const RightSide = () => {
                         </div>
                         {errors.preferredUnit && <span className="text-white/70 text-xs">{errors.preferredUnit.message}</span>}
                     </div>
-                    <div className="space-y-2 col-span-1">
+                    <div className="space-y-2 col-span-2 lg:col-span-1">
                         <Label htmlFor="budget" className="text-[#EEE9E6] font-poppins text-sm font-medium leading-5">
                             Budget (optional)
                         </Label>

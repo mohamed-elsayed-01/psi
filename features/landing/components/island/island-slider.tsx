@@ -15,7 +15,7 @@ const IslandSlider = () => {
     })
 
     return (
-        <div className="flex items-center gap-[32px] overflow-auto no-scrollbar pb-20">
+        <div className="flex items-center gap-[32px] overflow-auto no-scrollbar pb-20 pl-[20px] lg:pl-[80px]">
             {RENDER_ITEMS}
         </div>
     )
